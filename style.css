@@ -46,7 +46,22 @@ button.normal {
     border: none;
     outline: none;
     transition: .2s;
+
 }
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline: none;
+    transition: .2s;
+    text-transform: uppercase;
+}
+
 
 .section-p1 {
     padding: 40px 80px;
@@ -315,7 +330,100 @@ body {
 
 #banner button:hover {
     background: #088178;
-    color: #fff
+    color: #fff;
 }
 
 /*============ BANNER END  ============== */
+
+/*============ 2 COL BANNER START ============== */
+#banner-2-col {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner-2-col .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('img/banner/b17.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 48%;
+    height: 50vh;
+    padding-left: 40px;
+}
+
+#banner-2-col .banner-box2 {
+    background-image: url('img/banner/b10.jpg');
+}
+
+#banner-2-col h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#banner-2-col h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#banner-2-col span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#banner-2-col .banner-box:hover button {
+    background: #088178;
+    border: 1px solid #088178
+}
+
+/*============ 2 COL BANNER END  ============== */
+/*============ 3 COL BANNER START  ============== */
+#banner-3-col {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner-3-col .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('img/banner/b7.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 50vh;
+    padding-left: 40px;
+}
+
+#banner-3-col .banner-box2 {
+    background-image: url('img/banner/b4.jpg');
+}
+
+#banner-3-col .banner-box3 {
+    background-image: url('img/banner/b18.jpg');
+}
+
+#banner-3-col h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner-3-col h3 {
+    color: #e7f156;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+
+/*============ 3 COL BANNER END  ============== */
