@@ -15,7 +15,7 @@
 
 - [Repo](https://github.com/khoadodk/portfolio2022 'Repo')
 
-- [Live](<Homepage url> 'Live View')
+- [Live](https://cara-delta.vercel.app 'Live View')
 
 - [Bugs](https://github.com/khoadodk/portfolio2022/issues 'Issues Page')
 
