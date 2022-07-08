@@ -63,9 +63,8 @@ button.white {
     cursor: pointer;
     outline: none;
     transition: .2s;
-
+    text-transform: uppercase;
 }
-
 
 .section-p1 {
     padding: 40px 80px;
@@ -141,7 +140,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100%;
-    padding: 0 80px;
+    padding: 0 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -151,17 +150,18 @@ body {
     background-position: top 0 right 0;
 }
 
-#hero h4 {
-    color: #fff;
-    padding-bottom: 15px;
+#hero .hero-content {
+    width: 40%;
 }
 
-#hero h1 {
-    color: #088178;
+#hero .hero-content h1 {
+    font-size: 64px;
+    text-transform: capitalize;
 }
 
-#hero p {
+#hero .hero-content p {
     color: #fff;
+    line-height: 1.8;
 }
 
 #hero button {
@@ -178,64 +178,7 @@ body {
 }
 
 /*============ HERO END  ============== */
-/*============ FEATURES START ============== */
 
-#features {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#features .fe-box {
-    width: 180px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, .06);
-    border: 1px solid #cce7d0;
-    border-radius: 4px;
-    margin: 15px 0;
-}
-
-#features .fe-box:hover {
-    box-shadow: 10px 10px 54px rgba(70, 62, 221, 01);
-}
-
-.features .fe-box img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-#features .fe-box h6 {
-    display: inline-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: #088178;
-    background-color: #fddde4;
-}
-
-#features .fe-box:nth-child(2) h6 {
-    background-color: #cdebbc;
-}
-
-#features .fe-box:nth-child(3) h6 {
-    background-color: #d1e8f2
-}
-
-#features .fe-box:nth-child(4) h6 {
-    background-color: #cdd4f8
-}
-
-#features .fe-box:nth-child(5) h6 {
-    background-color: #f6dbf6
-}
-
-#features .fe-box:nth-child(6) h6 {
-    background-color: #fff2e5
-}
-
-/*============ FEATURES END  ============== */
 
 /*============ PRODUCTS START ============== */
 #product1 {
@@ -314,6 +257,56 @@ body {
 }
 
 /*============ PRODUCTS END  ============== */
+/*============ INTRO START ============== */
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%
+}
+
+#intro img {
+    width: 40%;
+    height: auto;
+}
+
+#intro .intro-content {
+    padding: 0 60px;
+}
+
+#intro .intro-content p {
+    line-height: 1.4;
+}
+
+#intro .intro-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    border: solid 0.5px #e1e1e1;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1);
+}
+
+#intro .intro-stats div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#intro .intro-stats div h4 {
+    color: #088178;
+}
+
+#intro .intro-stats div p {
+    margin: 10px 0 0 0;
+}
+
+/*============ INTRO END ============== */
 /*============ BANNER START  ============== */
 #banner {
     display: flex;
@@ -1042,12 +1035,17 @@ body {
         background-position: top 30% right 30%;
     }
 
-    #features {
-        justify-content: center
+    #hero .hero-content {
+        width: 60%;
     }
 
-    #features .fe-box {
-        margin: 25px;
+    #hero .hero-content h1 {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    #hero button {
+        font-size: 16px;
     }
 
     #product1 .prod-container {
@@ -1056,6 +1054,15 @@ body {
 
     #product1 .prod {
         margin: 25px;
+    }
+
+    #intro {
+        flex-direction: column;
+    }
+
+    #intro img {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     #banner {
@@ -1112,17 +1119,24 @@ body {
         background-position: 55%;
     }
 
-    #features {
-        justify-content: space-between;
+    #hero .hero-content {
+        width: 100%;
     }
 
-    #features .fe-box {
-        width: 155px;
-        margin: 0 0 15px 0;
+    #hero .hero-content h1 {
+        font-size: 32px;
+    }
+
+    #hero .hero-content p {
+        font-size: 18px;
     }
 
     #product1 .prod {
         width: 100%;
+    }
+
+    #intro .intro-content {
+        padding: 0 20px;
     }
 
     #banner {
